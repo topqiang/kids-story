@@ -2,6 +2,21 @@
 
 ## 2026-07-08
 
+- 为第一集《宝宝初入幼儿园》新增 HyperFrames 视频工程目录，准备按绘本关键帧制作 9:16 短视频。
+- 新增视频视觉规范 `videos/episode_001_bao_bao_chu_ru_you_er_yuan/DESIGN.md`，明确使用定稿角色和暖色儿童绘本风格。
+- 新增分句配音与音效生成脚本 `scripts/generate_episode_001_audio.py`，用于逐句对齐对白时间轴。
+- 生成第一集视频配音、音效和背景音乐，保存到 `videos/episode_001_bao_bao_chu_ru_you_er_yuan/assets/audio/`。
+- 新增第一集 HyperFrames 主合成文件 `videos/episode_001_bao_bao_chu_ru_you_er_yuan/index.html`，完成 10 个镜头、17 条字幕、音频与转场的时间线编排。
+- 为视频工程安装本地静态 `ffmpeg-static` 和 `ffprobe-static` 依赖，用于 HyperFrames 导出 MP4。
+- 完成第一集视频渲染，输出 `output/video/bao_bao_chu_ru_you_er_yuan.mp4`。
+- 新增视频验收预览图 `output/video/bao_bao_chu_ru_you_er_yuan_scene_check.jpg` 和 `output/video/bao_bao_chu_ru_you_er_yuan_contact_sheet.jpg`。
+- 完成 HyperFrames 验收：`lint` 0 错误，`validate` 通过，`inspect --samples 18` 0 布局问题，`ffprobe` 确认视频 93 秒且包含音轨。
+- 修正第一集目标时长为 93 秒，与现有对白时间轴 `00:00-01:33` 保持一致。
+- 生成第一集绘本最终版 PDF：`output/pdf/bao_bao_chu_ru_you_er_yuan_picture_book.pdf`，包含封面、10 页绘本正文和完整对白台词附录。
+- 新增 `scripts/generate_picture_book_pdf.py`，用于从绘本页面数据和图片自动生成 PDF。
+- 新增第一集《宝宝初入幼儿园》独立绘本目录 `picture_books/episode_001_bao_bao_chu_ru_you_er_yuan/`。
+- 将 10 张分镜图复制为绘本页图 `page_01.png` 至 `page_10.png`，并新增 `storybook.md`、`pages.json` 和图片匹配检查记录。
+- 重生成第 5 页“勇气贴纸”画面，使婷婷妈妈和北斗爸爸身上的贴纸都清晰可见，并同步替换绘本页图和原分镜图。
 - 新增 `AGENTS.md`，记录 Codex 中国开发者默认规则、协作要求和项目启动顺序。
 - 新增 `codex/memory.md`，沉淀项目定位、业务进展、角色记忆、内容边界和下次继续事项。
 - 新增 `codex/skills/kids_story.md`，记录本项目短片策划、创作、分镜、审核和交付技能流程。
