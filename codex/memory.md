@@ -15,6 +15,9 @@
   - `episodes/001_bao_bao_chu_ru_you_er_yuan.md`：宝宝初入幼儿园。
 - 已生成并保存 3 位主角的转面设定图，后续画面生成必须优先参考 `assets/characters/`。
 - 婷婷妈妈形象已经统一为白 T 牛仔裤版，不再使用旧版冬装、裙装、围裙或靴子造型。
+- 第一集《宝宝初入幼儿园》的绘本制作效果基本符合用户预期，后续优先沉淀并复用绘本流程。
+- 已新增绘本专用技能 `codex/skills/picture_book_creation.md`：用户下次只给主题时，先做主线确认，再做剧本确认，再做分镜确认，最后生成图片、绘本文件夹和 PDF。
+- 当前视频效果暂不作为标准流程，后续用户另行调整；新主题默认先忽略视频制作。
 
 ## 角色记忆
 
@@ -47,9 +50,9 @@
 
 ## 下次继续时优先事项
 
-1. 如继续第一集《宝宝初入幼儿园》，先检查 `episodes/001_bao_bao_chu_ru_you_er_yuan.md` 和角色图一致性。
-2. 如新增剧集，从 `docs/topic_bank.md` 选择选题，并复制 `templates/episode_template.md`。
-3. 如进入制作阶段，按 `production/workflow.md` 七阶段推进。
-4. 如准备发布，按 `production/quality_checklist.md` 完成安全、视觉、声音和平台检查。
-5. 每次协作结束前更新 `CHANGELOG.md`，记录日期、修改内容和素材状态。
-
+1. 如用户给新绘本主题，先读取 `codex/skills/picture_book_creation.md`，按“主线确认 → 剧本确认 → 分镜确认 → 图片生成 → PDF 交付”推进。
+2. 如继续第一集《宝宝初入幼儿园》，先检查 `episodes/001_bao_bao_chu_ru_you_er_yuan.md` 和角色图一致性。
+3. 如新增剧集，从 `docs/topic_bank.md` 选择选题，并复制 `templates/episode_template.md`。
+4. 如进入制作阶段，按 `production/workflow.md` 七阶段推进。
+5. 如准备发布，按 `production/quality_checklist.md` 完成安全、视觉、声音和平台检查。
+6. 每次协作结束前更新 `CHANGELOG.md`，记录日期、修改内容和素材状态。
