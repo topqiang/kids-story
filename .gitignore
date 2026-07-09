@@ -37,3 +37,6 @@ tmp/
 temp/
 *.tmp
 
+# 本地视频工程与大体积导出
+videos/
+output/video/
